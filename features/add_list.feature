@@ -6,5 +6,3 @@ Feature: Add a task to the to-do list
         When the user adds a task "Buy groceries"
         Then the to-do list should contain "Buy groceries"
 
-
-
