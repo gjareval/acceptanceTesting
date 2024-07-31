@@ -7,8 +7,8 @@ class ToDoListManager:
         self.tasks = {}
         self.next_id = 1
 
-    def add_task(self, description, due_date):
-        task = Task(self.next_id, description, due_date)
+    def add_task(self, description):
+        task = Task(self.next_id, description)
         self.tasks[self.next_id] = task
         self.next_id += 1
         print(f"Task added: {task}")

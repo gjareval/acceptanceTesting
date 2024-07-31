@@ -19,12 +19,10 @@ def main():
 
         if choice == '1':
             description = input("Enter task description: ")
-            due_date = input("Enter due date (YYYY-MM-DD): ")
             try:
-                datetime.datetime.strptime(due_date, "%Y-%m-%d")
-                manager.add_task(description, due_date)
+                manager.add_task(description)
             except ValueError:
-                print("Invalid date format. Please enter in YYYY-MM-DD format.")
+                print("Invalid date format.")
         
         elif choice == '2':
             manager.list_tasks()
